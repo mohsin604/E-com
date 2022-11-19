@@ -1,100 +1,49 @@
-.navbar{
-    /* background: #11008a; */
-    background-image: linear-gradient(to top right, rgb(0, 0, 0), rgb(13, 22, 77));
-    /* background: rgb(255, 0, 0); */
-  }
-  
-  
-  ul>li>a{
-      color: #ffffff;
-      
-      
-      /* margin-bottom: 20px; */
-  }
-  
-  
-  ul>li>a:hover {
-      color: #fff;
-      text-shadow:
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue,
-      0 0 5px blue;
-      /* 0 0 5px #0ff,
-      0 0 5px #0ff,
-      0 0 5px #0ff,
-      0 0 5px #0ff,
-      0 0 5px #0ff; */
-        -moz-transition: all 0.2s ease-out;
-          -o-transition: all 0.2s ease-out;
-          -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
-    }
-  
-    .sidebar{
-      /* background: #0800ff; */
-        background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(14, 52, 136));
-        position: fixed;
-         
-         height: 100%;
-        
-       
-       
-        
-       
-        
-    }
-   .btn{
-    cursor: pointer;
-   }
-    @media (max-width:768px){
-      .navbar-brand{
-           margin-left: 57px;
-      }
-      .navbar-toggler{
-        margin-left: 7px;
-      }
-      .navbar-toggler:focus{
-        box-shadow: none;
-        border-color: red;
-        
-      }
-      .nav-link{
-        text-align: center;
-      }
-       /* header{
-        height: 15vh;
-      }  */
-    }
-    @media (max-width:687px){
-     
-      .navbar-toggler{
-        color: red;
-        margin-bottom: 59px;
-      }
-       header{
-        height: 15vh;
-      } 
-    }
-    @media (max-width:413px){
-     
-      .navbar-toggler{
-        color: red;
-        margin-bottom: 80px;
-      }
-    }
-    @media (max-width:278px){
-     
-      .navbar-toggler{
-        color: red;
-        margin-bottom: 107px;
-      }
-      header{
-        height: 18vh;
-      } 
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.side-navbar {
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+  margin-left: 180px;
+}
+
+#menu-btn {
+  background-color: #100901;
+  color: #fff;
+  margin-left: -62px;
+}
+
+.my-container input {
+  border-radius: 2rem;
+  padding: 2px 20px;
+}
