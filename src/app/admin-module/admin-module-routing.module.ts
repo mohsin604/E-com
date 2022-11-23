@@ -6,6 +6,7 @@ import { ProductsComponent } from './admin-component/products/products.component
 import { AdminModuleComponent } from './admin-module.component';
 
 const routes: Routes = [{ path: '', component: AdminModuleComponent, children:[
+  { path:'', component:DashboardComponent },
   {path:'dashboard', component:DashboardComponent},
   {path:'products',component:ProductsComponent},
   {path:'products-analytics',component:ProductsAnalyticsComponent}

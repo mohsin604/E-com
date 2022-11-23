@@ -6,6 +6,7 @@ import { AdminModuleComponent } from './admin-module.component';
 import { DashboardComponent } from './admin-component/dashboard/dashboard.component';
 import { ProductsComponent } from './admin-component/products/products.component';
 import { ProductsAnalyticsComponent } from './admin-component/products-analytics/products-analytics.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { ProductsAnalyticsComponent } from './admin-component/products-analytics
   ],
   imports: [
     CommonModule,
-    AdminModuleRoutingModule
+    AdminModuleRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModuleModule { }
