@@ -43,7 +43,7 @@ private formbuilder:FormBuilder,
   }
 getSize(event:any) {
   if(event.target.checked) {
-    this.newSizeArray.puch(event.target.value);
+    this.newSizeArray.push(event.target.value);
   }
   else{
     this.newSizeArray =this.newSizeArray.filter((value: any) => value != event.target.value);
