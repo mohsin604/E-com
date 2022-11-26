@@ -61,7 +61,8 @@ getImages(event: any){
   }
 }
 SubmitProductForm(){
-  this.newSizeArray.forEach((Element:string)=>{
+  this.myproductForm.value;
+    this.newSizeArray.forEach((Element:string)=>{
     let formcontrol = new FormControl(Element);
     this.myproductForm.get("Size").push(formcontrol);
   })
